@@ -1,0 +1,15 @@
+.parent-div{
+    text-align: center;
+}
+.button{
+    margin: 10px 10px 0 15px;
+    color: #fff;
+    background: #6f6b6b;
+}
+.button:hover{
+    cursor: pointer;
+    background: #222222;
+    color: #fff;
+    transform: translateY(-5px);
+    transition: 0.4s;
+}

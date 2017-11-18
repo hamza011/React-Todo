@@ -1,0 +1,90 @@
+.form{
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 68%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 68%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 68%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding: 20px 0;
+}
+.input-field{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    background: transparent;
+}
+.input-field:focus{border-bottom: 1px solid #5cb85c; width:20%;}
+
+.submit-btn{
+    background: #5cb85c;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: monospace
+}
+.submit-btn:hover{
+    cursor: pointer;    
+    background-color: #3a9e3a;
+    transition:0.4s ease-out;
+}
+/* Material style */
+.clear-btn {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #d9534f;
+  outline:none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ripple magic */
+/*.clear-btn{
+  position: relative;
+  overflow: hidden;
+}*/
+
+.clear-btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 50%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+.clear-btn:hover{
+    background: #d63131;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0.2;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.clear-btn:focus:not(:active)::after {
+  animation: ripple 1.5s ease-out;
+}
+

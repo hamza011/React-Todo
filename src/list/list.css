@@ -1,0 +1,57 @@
+.unordered-list{
+    margin-top: 0;
+    padding: 10px 0 25px 0;
+    background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 68%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 68%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 68%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.each-item{
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    /*background: #0f1f2c;*/
+
+    background: rgb(207,231,250); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(207,231,250,1) 6%, rgba(99,147,193,1) 84%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(207,231,250,1) 6%,rgba(99,147,193,1) 84%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(207,231,250,1) 6%,rgba(99,147,193,1) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    margin: 10px
+}
+
+.list-item{
+    display: inline-block;
+    /*width: 50%;*/
+    /*color: #fff;*/
+    line-height: 2;
+    float: left;
+}
+.item{
+    text-transform: capitalize;
+}
+
+.del-btn {
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+  background: #d9534f;
+  outline:none;
+  position: relative;
+  overflow: hidden;
+  float: right;
+}
+.del-btn:hover{
+    background: #d63131;
+    transition:0.4s ease-out; 
+}
